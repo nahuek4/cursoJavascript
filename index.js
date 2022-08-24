@@ -1,22 +1,18 @@
- let inputValue = Number(prompt('Ingrese un numero'));
+let inputValue = Number(prompt('Ingrese un numero'));
 
- if(Number(inputValue)){
     for(let i = 0; i<5; i++){
-     inputValue += Number(prompt("Ingrese otro numero"));
-     console.log(inputValue);
-    }
-}else{
-    console.log("Tenes que ingresar un numero...");
+    inputValue += Number(prompt("Ingrese otro numero"));
+    console.log(inputValue);
 }
 
- let valorInicial = prompt("Ingrese un texto o numeros");
+let valorInicial = prompt("Ingrese un texto o numeros");
  console.log(valorInicial);
 
- do{
-     let valorExtra = prompt("Ingrese otro texto, para terminar la concatenacion escriba 'ESC' ");
-     valorInicial += valorExtra;
-     console.log(valorInicial);
- }while(valorInicial.includes('ESC') == false);
+do{
+    let valorExtra = prompt("Ingrese otro texto, para terminar la concatenacion escriba 'ESC' ");
+    valorInicial += valorExtra;
+    console.log(valorInicial);
+}while(valorInicial.includes('ESC') == false);
 
 let numero = Number(prompt("Ingrese un numero"));
 
