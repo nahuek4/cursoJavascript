@@ -1,6 +1,6 @@
  let inputValue = Number(prompt('Ingrese un numero'));
 
- if(isNaN(inputValue)){
+ if(Number(inputValue)){
     for(let i = 0; i<5; i++){
      inputValue += Number(prompt("Ingrese otro numero"));
      console.log(inputValue);
