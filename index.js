@@ -26,3 +26,4 @@ if(multiplicacion > 0 && numero > 0){
 }else{
     console.log("Alguno de los numeros ingresados es menor a 0 o igual a 0.");
 }
+
