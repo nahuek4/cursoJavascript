@@ -30,7 +30,7 @@ class Deuda{
         this.persona = persona;
     }
     hablar(){
-        console.log("Se registro una deuda de " + deuda + " a nombre de " + nombre)
+        console.log("Se registro una deuda de " + deuda + " a nombre de " + nombre);
     }
 } 
 
@@ -40,7 +40,8 @@ class Ingreso{
         this.persona = persona; 
     }
     hablar() {
-        console.log("Se registro un ingreso de " + ingreso + " pesos. A nombre de " + nombre)}
+        console.log("Se registro un ingreso de " + ingreso + " pesos. A nombre de " + nombre);
+    }
 }
 
 function nuevoIngreso(){
@@ -65,6 +66,11 @@ function nuevoIngreso(){
 }
 
 function nuevaDeuda(){
+<<<<<<< HEAD
+    deuda = Number(prompt("Ingrese su deuda"));
+    const deuda1 = new Deuda(deuda, nombre);
+    deuda1.hablar();
+=======
     ingreso = Number(prompt("Para agregar una deuda pulse 1, de lo contrario 0."));
     if (ingreso == 1){
         deuda = Number(prompt("Ingrese su deuda"));
@@ -78,6 +84,7 @@ function nuevaDeuda(){
     }else{
         console.log("Hemos notado que ha ingresado un numero incorrecto. No se ha registrado ninguna deuda");
     }
+>>>>>>> refs/remotes/origin/master
     nuevoIngreso();
 }
 
@@ -89,7 +96,11 @@ function verPersonas(){
 }
 
 function Inicio(){
+<<<<<<< HEAD
+    let inicio = Number(prompt("Ingrese: 1. Para registrarse 2. Para ingresar una nueva deuda 3. Para ingresar un ingreso 4. Para ver todas las personas de esta sesion 5. Para ver el promedio de edad de las personas registradas 6. Para finalizar el programa"));
+=======
     let inicio = Number(prompt("Ingrese: 1. Para registrarse 2. Para ingresar una nueva deuda 3. Para ingresar un ingreso 4. Para ver todas las personas de esta sesion 5. Para finalizar el programa"));
+>>>>>>> refs/remotes/origin/master
     switch(inicio){
         case 1: Registrar();break;
         case 2: nuevaDeuda();break;
